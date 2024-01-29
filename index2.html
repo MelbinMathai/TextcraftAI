@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Textcraft AI</title>
+        <!-- <link rel="icon" href="assets/img/sm-logo.svg"> -->
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- <link rel="stylesheet" href="assets/css/tailwind2.css"> -->
+        <link rel="stylesheet" href="assets/css/custom.css">
+    </head>
+
+    <body class="dark:bg-black transition-colors">
+
+        <div class="main_div">
+
+            <div class="left_menu w-[280px] border-r border-l fixed top-0 bottom-0 transition-all duration-75 ease-linear bg-white">
+
+                <!-- Logo -->
+                <div class="logo_top h-20 flex items-center justify-center">
+                    <a href="index.html" class="">
+                        <a class="flex items-center justify-start gap-3" href="/">
+                            <img src="assets/images/logo-icon.png" alt="TextCraft AI" draggable="false" class="h-7 rounded-[2.5px] object-contain select-none Border">
+                            <div class="text-black s900:text-[20px] text-[15px] font-extrabold font-lato tracking-[5px] ">TEXTCRAFT&nbsp;<span class="text-gradient-5">AI</span>
+                            </div>
+                        </a>
+                    </a>
+                </div>
+                <!-- End -->
+
+                <!-- Menu Items -->
+                <div class="left_menu pt-8">
+
+                    <!-- User Profile -->
+                    <div class="user_profile mx-3.5 mb-4 bg-[#f3f5f7] border border-[#e7eaee] rounded-xl">
+                        <div class="p-5 ">
+                            <div class="flex items-center justify-center">
+                                <div class="user_prof_left">
+                                    <img class="rounded-full w-11" src="assets/images/profile1.jpg" alt="">
+                                </div>
+                                <div class="user_name ml-3.5 mr-2 grow">
+                                    <h4 class="mb-0 text-base font-semibold leading-4">John Smith</h4>
+                                    <small class="text-xs">Administrator</small>
+                                </div>
+                                <div class="filter_bottom">
+                                    <a href="" class="inline-flex text-[22px] color-[#5b6b79] items-center justify-center rounded-full w-10 h-10 hover:bg-[#eff0f2] transition-all duration-75 ease-linear hover:transition-all">
+                                        <i class="bi bi-filter leading-[0]"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a class="relative flex items-center mx-3 pr-5 pl-3 my-1 text-sm font-normal transition-all duration-75 ease-linear rounded-md py-3 text-[#94a3b8] hover:bg-[#eff6ff]" href="#!"">
+                                <span class="min-w-[1.75rem]  inline-block text-start text-[16px] ">
+                                    <i class="bi bi-laptop"></i>
+                                </span> 
+                                <span  data-key="t-dashboards">Home</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="relative flex items-center mx-3 pr-5 pl-3 my-1 text-sm font-normal transition-all duration-75 ease-linear rounded-md py-3 text-[#94a3b8] hover:bg-[#eff6ff]" href="#!"">
+                                <span class="min-w-[1.75rem]  inline-block text-start text-[16px] ">
+                                    <i class="bi bi-pen"></i>
+                                </span> 
+                                <span  data-key="t-dashboards">Compose</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="relative flex items-center mx-3 pr-5 pl-3 my-1 text-sm font-normal transition-all duration-75 ease-linear rounded-md py-3 text-[#94a3b8] hover:bg-[#eff6ff]" href="#!"">
+                                <span class="min-w-[1.75rem]  inline-block text-start text-[16px] ">
+                                    <i class="bi bi-collection"></i>
+                                </span> 
+                                <span  data-key="t-dashboards">Email Library</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="relative flex items-center mx-3 pr-5 pl-3 my-1 text-sm font-normal transition-all duration-75 ease-linear rounded-md py-3 text-[#94a3b8] hover:bg-[#eff6ff]" href="#!"">
+                                <span class="min-w-[1.75rem]  inline-block text-start text-[16px] ">
+                                    <i class="bi bi-reply-all"></i>
+                                </span> 
+                                <span  data-key="t-dashboards">Auto Respond</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="relative flex items-center mx-3 pr-5 pl-3 my-1 text-sm font-normal transition-all duration-75 ease-linear rounded-md py-3 text-[#94a3b8] hover:bg-[#eff6ff]" href="#!"">
+                                <span class="min-w-[1.75rem]  inline-block text-start text-[16px] ">
+                                    <i class="bi bi-gear"></i>
+                                </span> 
+                                <span  data-key="t-dashboards">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End -->
+            
+            <header id="top_header" class="bg-white fixed right-0 left-[280px] w-100 shadow-lg">
+                <div class="px-4 h-[4.375rem] flex mx-auto">
+                    <div class="flex items-center w-full">
+
+                        <!-- Left input icon -->
+                        <button class="hover:bg-slate-100 w-[2.344rem] h-[2.344rem] inline-flex items-center justify-center rounded-md transition-all duration-75 ease-linear">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevrons-left" class="lucide lucide-chevrons-left w-5 h-5"><path d="m11 17-5-5 5-5"></path><path d="m18 17-5-5 5-5"></path></svg>
+                        </button>
+
+                        <!-- Search -->
+                        <div class="relative flex items-center ml-3">
+                            <input id="4" type="text" class="peer relative h-10 w-full rounded-md bg-gray-50 pl-10 pr-4 border font-thin outline-none focus:bg-white focus:ring-2 focus:ring-blue-400" placeholder="Search..."/>
+                            <span class="absolute left-4 transition-all text-sm duration-200 ease-in-out group-focus-within:text-blue-400"><i class="bi bi-search"></i></span>
+                        </div>
+
+                        <!-- Right side elements -->
+                        <div class="flex gap-3 ms-auto">
+
+                            <!-- Language Select -->
+                            <div class="relative h-[4.375rem] flex items-center dropdown h-header">
+                                
+                                <button id="lang-select" data-dropdown-toggle="language" class="text-white focus:outline-none hover:bg-slate-100 w-[2.344rem] h-[2.344rem] inline-flex items-center justify-center rounded-md transition-all duration-75 ease-linear" type="button">
+                                    <img src="assets/images/us-flag.svg" alt="" id="header-lang-img" class="h-5 rounded-sm">
+                                </button>
+                                    
+                                <!-- Dropdown menu -->
+                                <div id="language" class="z-10 hidden bg-white rounded-lg shadow w-44">
+                                    <ul class="px-2 py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="lang-select">
+                                        <li>
+                                            <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
+                                                <img src="assets/images/us-flag.svg" alt="" class="object-cover h-4 rounded-full">
+                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">English</h6>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
+                                                <img src="assets/images/us-flag.svg" alt="" class="object-cover h-4 rounded-full">
+                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">English</h6>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
+                                                <img src="assets/images/us-flag.svg" alt="" class="object-cover h-4 rounded-full">
+                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">English</h6>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
+                                                <img src="assets/images/us-flag.svg" alt="" class="object-cover h-4 rounded-full">
+                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">English</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Theme Select -->
+                            <div class="relative h-[4.375rem] flex items-center">
+                                
+                                <button id="theme-select" data-dropdown-toggle="dark-mode" class="hover:bg-slate-100 w-[2.344rem] h-[2.344rem] inline-flex items-center justify-center rounded-md transition-all duration-75 ease-linear" type="button">
+                                    <!-- <i class="bi bi-sun-fill"></i> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sun" class="inline-block w-5 h-5 stroke-1 fill-slate-100"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    </body>
+</html>
