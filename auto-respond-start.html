@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Textcraft AI</title>
+        <!-- <link rel="icon" href="assets/img/sm-logo.svg"> -->
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- <link rel="stylesheet" href="assets/css/tailwind2.css"> -->
+        <link rel="stylesheet" href="assets/css/custom.css">
+    </head>
+
+    <body class="bg-[#f1f5f9] transition-colors">
+
+        <div class="main_div">
+
+            <!-- Left Menu -->
+            <div class="left_menu w-[17.5rem] border-r border-l fixed top-0 bottom-0 transition-all duration-75 ease-linear bg-white z-[1003]">
+
+                <!-- Logo -->
+                <div class="logo_top h-20 flex items-center justify-center">
+                    <a href="index.html" class="">
+                        <a class="flex items-center justify-start gap-3" href="/">
+                            <img src="assets/images/logo-icon.png" alt="TextCraft AI" draggable="false" class="h-7 rounded-[2.5px] object-contain select-none Border">
+                            <div class="text-black s900:text-[20px] text-[15px] font-extrabold font-lato tracking-[5px] ">TEXTCRAFT&nbsp;<span class="text-gradient-5">AI</span>
+                            </div>
+                        </a>
+                    </a>
+                </div>
+                <!-- End -->
+
+                <!-- Menu Items -->
+                <div class="left_menu pt-8">
+
+                    <!-- User Profile -->
+                    <div class="user_profile mx-3.5 mb-4 bg-[#f3f5f7] border border-[#e7eaee] rounded-xl">
+                        <div class="p-5 ">
+                            <div class="flex items-center justify-center">
+                                <div class="user_prof_left">
+                                    <img class="rounded-full w-11" src="assets/images/profile1.jpg" alt="">
+                                </div>
+                                <div class="user_name ml-3.5 mr-2 grow">
+                                    <h4 class="mb-0 text-base font-semibold leading-4">John Smith</h4>
+                                    <small class="text-xs">Administrator</small>
+                                </div>
+                                <div class="filter_bottom">
+                                    <a href="" class="inline-flex text-[22px] color-[#5b6b79] items-center justify-center rounded-full w-10 h-10 hover:bg-[#eff0f2] transition-all duration-75 ease-linear hover:transition-all">
+                                        <i class="bi bi-filter leading-[0]"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a class="relative flex items-center mx-3 pr-5 pl-3 my-1 text-sm font-normal transition-all duration-75 ease-linear rounded-md py-3 text-[#94a3b8] hover:bg-[#eff6ff]" href="#!"">
+                                <span class="min-w-[1.75rem]  inline-block text-start text-[16px] ">
+                                    <i class="bi bi-laptop"></i>
+                                </span> 
+                                <span  data-key="t-dashboards">Home</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="relative flex items-center mx-3 pr-5 pl-3 my-1 text-sm font-normal transition-all duration-75 ease-linear rounded-md py-3 text-[#94a3b8] hover:bg-[#eff6ff]" href="#!"">
+                                <span class="min-w-[1.75rem]  inline-block text-start text-[16px] ">
+                                    <i class="bi bi-pen"></i>
+                                </span> 
+                                <span  data-key="t-dashboards">Compose</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="relative flex items-center mx-3 pr-5 pl-3 my-1 text-sm font-normal transition-all duration-75 ease-linear rounded-md py-3 text-[#94a3b8] hover:bg-[#eff6ff]" href="#!"">
+                                <span class="min-w-[1.75rem]  inline-block text-start text-[16px] ">
+                                    <i class="bi bi-collection"></i>
+                                </span> 
+                                <span  data-key="t-dashboards">Email Library</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="relative flex items-center mx-3 pr-5 pl-3 my-1 text-sm font-normal transition-all duration-75 ease-linear rounded-md py-3 text-[#94a3b8] hover:bg-[#eff6ff]" href="#!"">
+                                <span class="min-w-[1.75rem]  inline-block text-start text-[16px] ">
+                                    <i class="bi bi-reply-all"></i>
+                                </span> 
+                                <span  data-key="t-dashboards">Auto Respond</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="relative flex items-center mx-3 pr-5 pl-3 my-1 text-sm font-normal transition-all duration-75 ease-linear rounded-md py-3 text-[#94a3b8] hover:bg-[#eff6ff]" href="#!"">
+                                <span class="min-w-[1.75rem]  inline-block text-start text-[16px] ">
+                                    <i class="bi bi-gear"></i>
+                                </span> 
+                                <span  data-key="t-dashboards">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End -->
+            
+            <header id="top_header" class="bg-white fixed right-0 left-[17.5rem] w-100 shadow-lg z-[1000]">
+                <div class="px-4 h-[4.375rem] flex mx-auto">
+                    <div class="flex items-center w-full">
+
+                        <!-- Left input icon -->
+                        <button class="hover:bg-slate-100 w-[2.344rem] h-[2.344rem] inline-flex items-center justify-center rounded-md transition-all duration-75 ease-linear">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevrons-left" class="lucide lucide-chevrons-left w-5 h-5"><path d="m11 17-5-5 5-5"></path><path d="m18 17-5-5 5-5"></path></svg>
+                        </button>
+
+                        <!-- Search -->
+                        <div class="relative flex items-center ml-3">
+                            <input id="4" type="text" class="peer relative h-10 w-full rounded-md bg-gray-50 pl-10 pr-4 border font-thin outline-none focus:bg-white focus:ring-2 focus:ring-blue-400" placeholder="Search..."/>
+                            <span class="absolute left-4 transition-all text-sm duration-200 ease-in-out group-focus-within:text-blue-400"><i class="bi bi-search"></i></span>
+                        </div>
+
+                        <!-- Right side elements -->
+                        <div class="flex gap-3 ms-auto">
+
+                            <!-- Language Select -->
+                            <div class="relative h-[4.375rem] flex items-center dropdown h-header">
+                                
+                                <button id="lang-select" data-dropdown-toggle="language" class="text-white focus:outline-none hover:bg-slate-100 w-[2.344rem] h-[2.344rem] inline-flex items-center justify-center rounded-md transition-all duration-75 ease-linear" type="button">
+                                    <img src="assets/images/us-flag.svg" alt="" id="header-lang-img" class="h-5 rounded-sm">
+                                </button>
+                                    
+                                <!-- Dropdown menu -->
+                                <div id="language" class="z-10 hidden bg-white rounded-lg shadow w-44">
+                                    <ul class="px-2 py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="lang-select">
+                                        <li>
+                                            <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
+                                                <img src="assets/images/us-flag.svg" alt="" class="object-cover h-4 rounded-full">
+                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">English</h6>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
+                                                <img src="assets/images/us-flag.svg" alt="" class="object-cover h-4 rounded-full">
+                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">English</h6>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
+                                                <img src="assets/images/us-flag.svg" alt="" class="object-cover h-4 rounded-full">
+                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">English</h6>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
+                                                <img src="assets/images/us-flag.svg" alt="" class="object-cover h-4 rounded-full">
+                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">English</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Theme Select -->
+                            <div class="relative h-[4.375rem] flex items-center">
+                                
+                                <button id="theme-select" data-dropdown-toggle="dark-mode" class="hover:bg-slate-100 w-[2.344rem] h-[2.344rem] inline-flex items-center justify-center rounded-md transition-all duration-75 ease-linear" type="button">
+                                    <!-- <i class="bi bi-sun-fill"></i> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sun" class="inline-block w-5 h-5 stroke-1 fill-slate-100"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+                                </button>
+                            </div>
+
+                            <!-- Notifications -->
+                            <div class="relative h-[4.375rem] flex items-center">
+                                
+                                <button id="theme-select" data-dropdown-toggle="notifications" class="hover:bg-slate-100 w-[2.344rem] h-[2.344rem] inline-flex items-center justify-center rounded-md transition-all duration-75 ease-linear" type="button">
+                                    <!-- <i class="bi bi-sun-fill"></i> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bell-ring" class="lucide lucide-bell-ring inline-block w-5 h-5 stroke-1 fill-slate-100 group-data-[topbar=dark]:fill-topbar-item-bg-hover-dark group-data-[topbar=brand]:fill-topbar-item-bg-hover-brand"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path><path d="M4 2C2.8 3.7 2 5.7 2 8"></path><path d="M22 8c0-2.3-.8-4.3-2-6"></path></svg>
+                                </button>
+
+                                <!-- Dropdown menu -->
+                                <div id="notifications" class="z-10 hidden bg-white rounded-lg shadow-lg rounded-lg shadow-md min-w-[26rem]">
+                                    <div class="p-4">
+                                        <div class="mb-4 flex items-center gap-4">
+                                            <h6 class=" text-16 font-semibold">Notifications</h6>
+                                            <span class="inline-flex items-center justify-center w-5 h-5 text-[11px] font-medium rounded-full text-white bg-orange-500 border-orange-500">10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- End -->
+
+
+            <!-- Body contents -->
+            <div class="relative min-h-screen">
+                <div class="ml-[17.5rem] pt-[4.375rem] pb-[3.5rem] px-4">
+                    
+
+                    <!-- Breadcrumb -->
+                    <nav class="flex py-4" aria-label="Breadcrumb">
+                        <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                            <li class="inline-flex items-center">
+                                <a href="#" class="inline-flex items-center gap-2.5 text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                                    </svg>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <div class="flex items-center">
+                                    <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                    </svg>
+                                    <a href="#" class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-dark">Auto Respond</a>
+                                </div>
+                            </li>
+                            <li aria-current="page">
+                                <div class="flex items-center">
+                                    <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                    </svg>
+                                    <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Getting Started</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </nav>
+
+                    <!-- Getting Started Message -->
+                    <!-- <div class="bg-white rounded-md border border-[#e7eaee]">
+                        <div class="start_head px-56 py-20 text-center">
+                            <h3 class="text-2xl font-bold mb-10">Unlock 24/7 Efficiency: AutoResponse Email Bots Anytime, Anywhere</h3>
+                            <p class="text-gray-500">Transform your email communication with our AutoResponse feature, designed to boost productivity wherever you are. This powerful dashboard tool allows you to effortlessly create intelligent bots that respond to emails, offering unparalleled speed and efficiency. With the advanced training system, these bots adapt and provide accurate responses, ensuring your customers receive personalized attention. No matter where you are, our AutoResponse feature works tirelessly, providing 24/7 support. Elevate your customer experience, save time, and outpace the competition. Click the button below to supercharge your email management with the fastest support bots in the market.</p>
+
+                            <a href="" class="inline-flex mt-10 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-14 py-3.5 text-center">Get Started</a>
+                        </div>
+
+                        <div class="text-center px-4">
+                            <img class="max-w-full max-h-80" src="assets/images/respond.png" alt="">
+                        </div>
+                    </div> -->
+                    
+
+                    <div class="bg-white rounded-md border border-[#e7eaee]">
+                        <div class="px-10 py-20">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="mb-5">
+                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Agent Name</label>
+                                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Agent Name" required>
+                                </div>
+
+                                <div class="mb-5">                       
+                                    <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Select Account</label>
+                                    <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option selected>Choose a country</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="FR">France</option>
+                                    <option value="DE">Germany</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text_area mb-5">
+                                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Promt</label>
+                                    <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Promt"></textarea>
+                                </div>
+
+                                <div class="text_area mb-5">
+                                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Description</label>
+                                    <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="doc_upload">
+                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark" for="file_input">Upload file</label>
+                                <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file">
+                            </div>
+
+                            <div>
+                                <a href="" class="inline-flex mt-10 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-14 py-3.5 text-center">Get Started</a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    </body>
+</html>
