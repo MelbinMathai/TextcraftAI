@@ -15,12 +15,29 @@
 
 
 // JQUERY
-var $button = $("button")
 
-$($button).on("click", function(){
-	if($(this).hasClass("selected")) {
-		$(this).removeClass("selected")
-	} else {
-		$(this).addClass("selected")
-	}
-})
+$(function() {
+    $('.chart').easyPieChart({
+      size: 160,
+      barColor: "#17d3e6",
+      scaleLength: 0,
+      lineWidth: 15,
+      trackColor: "#373737",
+      lineCap: "circle",
+      animate: 2000,
+    });
+});
+
+
+
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
