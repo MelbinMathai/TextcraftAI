@@ -14,11 +14,12 @@
         <link rel="stylesheet" href="assets/css/custom.css">
     </head>
 
-    <body class="dark:bg-black transition-colors">
+    <body class="bg-[#f1f5f9] transition-colors">
 
         <div class="main_div">
 
-            <div class="left_menu w-[280px] border-r border-l fixed top-0 bottom-0 transition-all duration-75 ease-linear bg-white">
+            <!-- Left Menu -->
+            <div class="left_menu w-[17.5rem] border-r border-l fixed top-0 bottom-0 transition-all duration-75 ease-linear bg-white z-[1003]">
 
                 <!-- Logo -->
                 <div class="logo_top h-20 flex items-center justify-center">
@@ -105,7 +106,7 @@
             </div>
             <!-- End -->
             
-            <header id="top_header" class="bg-white fixed right-0 left-[280px] w-100 shadow-lg">
+            <header id="top_header" class="bg-white fixed right-0 left-[17.5rem] w-100 shadow-lg z-[1000]">
                 <div class="px-4 h-[4.375rem] flex mx-auto">
                     <div class="flex items-center w-full">
 
@@ -141,20 +142,20 @@
                                         </li>
                                         <li>
                                             <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
-                                                <img src="assets/images/de-flag.svg" alt="" class="object-cover h-4 rounded-full">
-                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">German</h6>
+                                                <img src="assets/images/us-flag.svg" alt="" class="object-cover h-4 rounded-full">
+                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">English</h6>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
-                                                <img src="assets/images/es-flag.svg" alt="" class="object-cover h-4 rounded-full">
-                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">Spanish</h6>
+                                                <img src="assets/images/us-flag.svg" alt="" class="object-cover h-4 rounded-full">
+                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">English</h6>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
-                                                <img src="assets/images/fr-flag.svg" alt="" class="object-cover h-4 rounded-full">
-                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">French</h6>
+                                                <img src="assets/images/us-flag.svg" alt="" class="object-cover h-4 rounded-full">
+                                                <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">English</h6>
                                             </a>
                                         </li>
                                     </ul>
@@ -192,10 +193,231 @@
                     </div>
                 </div>
             </header>
+            <!-- Header End -->
+
+            <div class="relative min-h-screen">
+                <div class="ml-[17.5rem] pt-[4.375rem] pb-[3.5rem] px-4">
+                    <!-- Breadcrumb -->
+                    <nav class="flex py-6" aria-label="Breadcrumb">
+                        <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                            <li class="inline-flex items-center">
+                                <a href="#" class="inline-flex items-center gap-2.5 text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                                    </svg>
+                                    Home
+                                </a>
+                            </li>
+                            <li aria-current="page">
+                                <div class="flex items-center">
+                                    <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                    </svg>
+                                    <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Home</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </nav>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white border border-gray-300 rounded-md p-5">
+                            <div class="automated_reply">
+                                <div class="header_top flex justify-between mb-5">
+                                    <h4 class="font-bold text-base text-dark" id="test">Total Automated Replies</h4>
+
+                                    <div id="drop_sec" data-dropdown-toggle="sub_drop" >
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                                        </svg>
+                                    </div>
+                                    <!-- Dropdown menu -->
+                                    <div id="sub_drop" class="z-10 hidden bg-white rounded-lg shadow w-44">
+                                        <ul class="px-2 py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="lang-select">
+                                            <li>
+                                                <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
+                                                    <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">Daily</h6>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
+                                                    <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">Weekly</h6>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>  
+
+
+                                <!-- <div id="shiva"><span class="count text-dark">1000</span></div> -->
+
+                                <ul class="List">
+  
+                                    <li class="List-item">
+                                        <div class="ProgressBar ProgressBar--animateAll" data-progress="80">
+                                            <svg class="ProgressBar-contentCircle">
+                                                <circle transform="rotate(-90, 100, 100)" class="ProgressBar-background" cx="100" cy="100" r="95" />
+                                                <circle transform="rotate(-90, 100, 100)" class="ProgressBar-circle" cx="100" cy="100" r="95" />
+                                                <span class="ProgressBar-percentage ProgressBar-percentage--count"></span>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                      
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-gray-300 rounded-md p-5">
+                            <div class="automated_reply">
+                                <div class="header_top flex justify-between mb-5">
+                                    <h4 class="font-bold text-base text-dark" id="test">Total Automated Replies</h4>
+
+                                    <div id="drop_sec1" data-dropdown-toggle="sub_drop1" >
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                                        </svg>
+                                    </div>
+                                    <!-- Dropdown menu -->
+                                    <div id="sub_drop1" class="z-10 hidden bg-white rounded-lg shadow w-44">
+                                        <ul class="px-2 py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="lang-select">
+                                            <li>
+                                                <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
+                                                    <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">Daily</h6>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="flex items-center py-2.5 px-2.5 gap-3 hover:bg-slate-100 rounded-md transition-all duration-75 ease-linear" data-lang="en" title="English">
+                                                    <h6 class="transition-all duration-200 ease-linear font-15medium text- text-slate-600 dark:text-zink-200 group-hover/items:text-custom-500">Weekly</h6>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> 
+
+                                <!-- <div id="shiva"><span class="count text-dark">1000</span></div> -->
+
+                                <ul class="List">
+  
+                                    <li class="List-item">
+                                        <div class="ProgressBar ProgressBar--animateAll" data-progress="60">
+                                            <svg class="ProgressBar-contentCircle">
+                                                <circle transform="rotate(-90, 100, 100)" class="ProgressBar-background" cx="100" cy="100" r="95" />
+                                                <circle transform="rotate(-90, 100, 100)" class="ProgressBar-circle" cx="100" cy="100" r="95" />
+                                                <span class="ProgressBar-percentage ProgressBar-percentage--count"></span>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                      
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
 
         <!-- Scripts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+        <script src="assets/js/jquery-3.3.1.js"></script>
+        <script src="assets/js/piechart.js"></script>
+
+        <script>
+            $('.count').each(function () {
+                $(this).prop('Counter',0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+
+            
+
+    // Chart Animation
+    (function ($){
+
+        $.fn.bekeyProgressbar = function(options){
+
+            options = $.extend({
+                animate     : true,
+            animateText : true
+            }, options);
+
+            var $this = $(this);
+        
+            var $progressBar = $this;
+            var $progressCount = $progressBar.find('.ProgressBar-percentage--count');
+            var $circle = $progressBar.find('.ProgressBar-circle');
+            var percentageProgress = $progressBar.attr('data-progress');
+            var percentageRemaining = (100 - percentageProgress);
+            var percentageText = $progressCount.parent().attr('data-progress');
+        
+            //Calcule la circonférence du cercle
+            var radius = $circle.attr('r');
+            var diameter = radius * 2;
+            var circumference = Math.round(Math.PI * diameter);
+
+            //Calcule le pourcentage d'avancement
+            var percentage =  circumference * percentageRemaining / 100;
+
+            $circle.css({
+            'stroke-dasharray' : circumference,
+            'stroke-dashoffset' : percentage
+            })
+            
+            //Animation de la barre de progression
+            if(options.animate === true){
+            $circle.css({
+                'stroke-dashoffset' : circumference
+            }).animate({
+                'stroke-dashoffset' : percentage
+            }, 3000 )
+            }
+            
+            //Animation du texte (pourcentage)
+            if(options.animateText == true){
+
+            $({ Counter: 0 }).animate(
+                { Counter: percentageText },
+                { duration: 3000,
+                step: function () {
+                $progressCount.text( Math.ceil(this.Counter) + '%');
+                }
+                });
+
+            }else{
+            $progressCount.text( percentageText + '%');
+            }
+        
+        };
+
+        })(jQuery);
+
+                $(document).ready(function(){
+
+                $('.ProgressBar--animateNone').bekeyProgressbar({
+                animate : false,
+                animateText : false
+                });
+
+                $('.ProgressBar--animateCircle').bekeyProgressbar({
+                animate : true,
+                animateText : false
+                });
+
+                $('.ProgressBar--animateText').bekeyProgressbar({
+                animate : false,
+                animateText : true
+                });
+
+                $('.ProgressBar--animateAll').bekeyProgressbar();
+
+                })
+        </script>
     </body>
 </html>
