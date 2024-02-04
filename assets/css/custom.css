@@ -12,6 +12,64 @@ body {
 }
 
 
+body, .custom_scroll {
+  --sb-track-color: #232E33;
+  --sb-thumb-color: #6BAF8D;
+  --sb-size: 6px;
+}
+
+body::-webkit-scrollbar, .custom_scroll::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track, .custom_scroll::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb, .custom_scroll::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body, .custom_scroll {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+
+.custom_scroll {
+  --sb-track-color: #d1d1d1;
+  --sb-thumb-color: #6BAF8D;
+  --sb-size: 6px;
+}
+
+.custom_scroll::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+.custom_scroll::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+.custom_scroll::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .custom_scroll {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+
 .ProgressBar,
 .ProgressBar-contentCircle {
   display: table;
@@ -74,3 +132,58 @@ body {
   text-align: center;
 }
   
+/*/////// Custom Text Editor ///////*/
+.ck-toolbar, .ck-content {
+  border: none !important;
+}
+
+.ck-editor__top {
+  /* position: fixed !important; */
+  /* bottom: 0; */
+}
+
+/* .ck.ck-editor {
+  display: flex;
+  flex-direction: column-reverse;
+} */
+
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, 
+.ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
+  border-top-left-radius: 7px !important;
+  border-top-right-radius: 7px !important;
+  padding: 7px 10px !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, 
+.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
+  border: 0 !important;
+  border-top-left-radius: 7px !important;
+  border-top-right-radius: 7px !important;
+  box-shadow: none !important;
+} 
+
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable .ck-focused, 
+.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners .ck-focused {
+  box-shadow: none !important;
+}
+
+.ck.ck-editor {
+  height: 94vh !important;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.history .history_text {
+  width: calc(100% - 45px);
+}
+
+.right_items {
+  width: 45px;
+  text-align: center;
+}
+
+.text_length .active {
+  background-color: #10b981;
+}
